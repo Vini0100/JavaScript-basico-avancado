@@ -1,0 +1,35 @@
+<div id="add-form-container" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Advertise the vacancy by filling out the form</h1>
+        </div>
+        <div id="form-box" class="col-md-12">
+            <h2>Write with details for find as soon as possible</h2>
+            <form action="/jobs/add" method="post">
+                <div class="form-group">
+                    <label for="title">Job title:</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Write the title of Job" required>
+                    <small id="titleHelp" class="form-text text-muted">The title is very important, be clear and objective.</small>
+                </div>
+                <div class="form-group">
+                    <label for="description">Job description:</label>
+                    <textarea type="text" class="form-control" id="description" name="description" placeholder="Describe the activities of developer..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Contracting:</label>
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Write the company that are Contracting" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact e-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Write a a contact email" required>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <input type="text" class="form-control" id="salary" name="salary" placeholder="Write the job salary" required>
+                </div>
+                <input type="hidden" name="new_job" value="1">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Quizz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <h1 id="main-title">Developer Quizz</h1>
+    <!-- SCORE BOARD -->
+    <div id="score-container" class="hide">
+        <H2>Congratulations!</H2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>you're right <span id="correct-answers">0</span> of <span id="questions-qty">10</span> questions</p>
+        <button id="restart">Restart Quizz!</button>
+    </div>
+    <!-- QUIZZ CONTAINER -->
+    <div id="quizz-container">
+        <p id="question"><span id="question-number"></span> - <span id="question-text">Who is the unit of measurement for meters</span></p>
+        <div id="answers-box">
+            <button><span class="btn-letter">a</span> <span class="question-answer">m</span> </button>
+            <button><span class="btn-letter">b</span> <span class="question-answer">km</span> </button>
+            <button><span class="btn-letter">c</span> <span class="question-answer">ms</span> </button>
+            <button><span class="btn-letter">d</span> <span class="question-answer">r</span> </button>
+        </div>
+    </div>
+
+    <!-- TEMPLATE ANSWER -->
+    <button class="answer-template hide"><span class="btn-letter">a</span><span class="question-answer"></span></button>
+</body>
+</html>
